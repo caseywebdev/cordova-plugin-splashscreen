@@ -249,7 +249,7 @@
      */
     BOOL isIPad = [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad;
     if (UIInterfaceOrientationIsLandscape(orientation) && !isIPad) {
-        imgTransform = CGAffineTransformMakeRotation(M_PI / 2);
+        imgTransform = CGAffineTransformMakeRotation(-M_PI / 2);
         imgBounds.size = CGSizeMake(imgBounds.size.height, imgBounds.size.width);
     }
 
